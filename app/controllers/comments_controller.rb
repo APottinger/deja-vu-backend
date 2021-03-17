@@ -15,6 +15,7 @@ class CommentsController < ApplicationController
 
   # POST /comments
   def create
+    #byebug
     @comment = Comment.new(comment_params)
 
     if @comment.save
@@ -46,6 +47,6 @@ class CommentsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def comment_params
-      params.require(:comment).permit(:user_id)
+      params.require(:comment).permit(:content, :user_id)
     end
 end
