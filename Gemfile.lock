@@ -50,6 +50,7 @@ GEM
     activerecord (6.0.3.5)
       activemodel (= 6.0.3.5)
       activesupport (= 6.0.3.5)
+    activerecord-reset-pk-sequence (0.2.1)
     activestorage (6.0.3.5)
       actionpack (= 6.0.3.5)
       activejob (= 6.0.3.5)
@@ -69,6 +70,12 @@ GEM
       activesupport
     concurrent-ruby (1.1.8)
     crass (1.0.6)
+    database_cleaner (2.0.1)
+      database_cleaner-active_record (~> 2.0.0)
+    database_cleaner-active_record (2.0.0)
+      activerecord (>= 5.a)
+      database_cleaner-core (~> 2.0.0)
+    database_cleaner-core (2.0.1)
     erubi (1.10.0)
     fast_jsonapi (1.5)
       activesupport (>= 4.2)
@@ -185,8 +192,10 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers (~> 0.10.12)
+  activerecord-reset-pk-sequence (~> 0.2.1)
   bootsnap (>= 1.4.2)
   byebug
+  database_cleaner (~> 2.0)
   fast_jsonapi (~> 1.5)
   listen (~> 3.2)
   puma (~> 4.1)

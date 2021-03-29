@@ -44,4 +44,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "active_model_serializers", "~> 0.10.12"
 
-gem "fast_jsonapi", "~> 1.5"
+
+
+gem "activerecord-reset-pk-sequence", "~> 0.2.1"
+
+gem "database_cleaner", "~> 2.0"
