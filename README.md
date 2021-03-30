@@ -1,24 +1,25 @@
-# README
+# DEJA-VU
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+DEJA-VU is a web app build with a vanilla JavaScript frontend and a rails API backend. This README is specific for the backend.
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+Fork this repo.
+The frontend of this repo is here [DEJA-VU-FRONTEND](https://github.com/APottinger/deja-vu-frontend)
 
-* System dependencies
+```bash
+bundle update
+```
 
-* Configuration
+## Usage
 
-* Database creation
+```ruby 
+rails s
+```
 
-* Database initialization
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
